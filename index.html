@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentação - Minha Aplicação</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            min-height: 100vh;
+        }
+
+        /* Estilo da barra lateral */
+        .sidebar {
+            background-color: #2c3e50;
+            color: white;
+            width: 250px;
+            padding: 20px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            height: 100%;
+        }
+
+        .sidebar h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .sidebar ul li {
+            margin-bottom: 10px;
+        }
+
+        .sidebar ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .sidebar ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Estilo do conteúdo principal */
+        .content {
+            margin-left: 270px;
+            padding: 20px;
+            flex-grow: 1;
+        }
+
+        .content h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .content p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .content code {
+            background-color: #f4f4f4;
+            padding: 5px;
+            border-radius: 3px;
+            font-size: 16px;
+        }
+
+        /* Estilo dos blocos de código */
+        pre {
+            background-color: #f4f4f4;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+
+        /* Footer */
+        .footer {
+            margin-top: 40px;
+            text-align: center;
+            color: #7f8c8d;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Barra lateral de navegação -->
+    <div class="sidebar">
+        <h2>Documentação</h2>
+        <ul>
+            <li><a href="#introducao">Introdução</a></li>
+            <li><a href="#instalacao">Instalação</a></li>
+            <li><a href="#configuracao">Configuração</a></li>
+            <li><a href="#uso">Uso</a></li>
+            <li><a href="#api">API</a></li>
+        </ul>
+    </div>
+
+    <!-- Conteúdo principal -->
+    <div class="content">
+        <h1 id="introducao">Introdução</h1>
+        <p>Bem-vindo à documentação da Minha Aplicação. Aqui você encontrará tudo o que precisa para instalar,
+            configurar e utilizar o sistema.</p>
+
+        <h2 id="instalacao">Instalação</h2>
+        <p>Para instalar a aplicação, execute o seguinte comando:</p>
+        <pre><code>$ git clone https://github.com/usuario/minha-aplicacao.git</code></pre>
+
+        <h2 id="configuracao">Configuração</h2>
+        <p>Para configurar a aplicação, edite o arquivo <code>config.json</code> e adicione as seguintes informações:
+        </p>
+        <pre><code>{
+    "porta": 8080,
+    "bancoDeDados": "mysql"
+}</code></pre>
+
+        <h2 id="uso">Uso</h2>
+        <p>Após configurar a aplicação, execute o seguinte comando para iniciá-la:</p>
+        <pre><code>$ npm start</code></pre>
+
+        <h2 id="api">API</h2>
+        <p>A aplicação expõe uma API RESTful. Veja abaixo um exemplo de como fazer uma requisição:</p>
+        <pre><code>GET /api/v1/usuarios</code></pre>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>© 2024 Minha Empresa. Todos os direitos reservados.</p>
+        </div>
+    </div>
+</body>
+
+</html>
